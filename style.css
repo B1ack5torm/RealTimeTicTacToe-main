@@ -239,3 +239,93 @@ p{
 
     justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .container {
+      padding: 10px;
+    }
+  
+    .background li {
+      width: 10px;
+      height: 10px;
+    }
+  
+    .heading h1 {
+      font-size: 4rem;
+      margin: 20px 0;
+    }
+  
+    #find {
+      width: 200px;
+    }
+  
+    .btn {
+      width: 60px;
+      height: 60px;
+      font-size: 1.5rem;
+    }
+  
+    #bigcont {
+      font-size: 1.2rem;
+    }
+  
+    #valueCont {
+      font-size: 1rem;
+    }
+  
+    .modal-content {
+      width: 70%;
+    }
+  
+    #startGame {
+      padding: 10px 60px;
+      font-size: 25px;
+      margin: 150px 2px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    /* Adjustments for even smaller screens */
+    .container {
+      padding: 5px;
+    }
+  
+    .background li {
+      width: 5px;
+      height: 5px;
+    }
+  
+    .heading h1 {
+      font-size: 3rem;
+      margin: 10px 0;
+    }
+  
+    #find {
+      width: 150px;
+    }
+  
+    .btn {
+      width: 40px;
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    #bigcont {
+      font-size: 1rem;
+    }
+  
+    #valueCont {
+      font-size: 0.8rem;
+    }
+  
+    .modal-content {
+      width: 90%;
+    }
+  
+    #startGame {
+      padding: 5px 40px;
+      font-size: 20px;
+      margin: 100px 2px;
+    }
+  }
