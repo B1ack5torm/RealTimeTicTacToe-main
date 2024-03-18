@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <div class="heading">
+          <h1>Tic-Tac-Toe</h1>
+          <button id="startGame">Start Game</button>
+        </div>
+
+        <div id="gameModal" class="modal">
+          <div class="modal-content">
+            <p id="enterName">Enter your name</p>
+            <input
+              type="text"
+              placeholder="Name"
+              id="name"
+              autocomplete="off"
+              required
+            />
+            <div>
+              <button id="find">Search player</button>
+            </div>
+          </div>
+        </div>
+        <div class="loader-container">
+          <img
+            id="loading"
+            src="loading.gif"
+            alt="Loading..."
+            style="display: none"
+          />
+          <p id="loadingText" style="display: none">Searching for player</p>
+        </div>
+        <div style="display: flex; width: 95vw; position: relative">
+          <p id="userCont">You : <span id="user"></span></p>
+          <p style="position: absolute; right: 0" id="oppNameCont">
+            Opponent : <span id="oppName"></span>
+          </p>
+        </div>
+
+        <p id="whosTurn">X's Turn</p>
+
+        <div id="bigcont">
+          <div id="cont">
+            <button id="btn1" class="btn"></button>
+            <button id="btn2" class="btn"></button>
+            <button id="btn3" class="btn"></button>
+            <button id="btn4" class="btn"></button>
+            <button id="btn5" class="btn"></button>
+            <button id="btn6" class="btn"></button>
+            <button id="btn7" class="btn"></button>
+            <button id="btn8" class="btn"></button>
+            <button id="btn9" class="btn"></button>
+          </div>
+        </div>
+        <br />
+        <p id="valueCont">You are plaing as: <span id="value"></span></p>
+        <br />
+      </ul>
+    </div>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</html>
