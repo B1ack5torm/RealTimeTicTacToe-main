@@ -297,7 +297,7 @@ p{
     }
   
     .heading h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       margin: 10px 0;
     }
   
@@ -324,8 +324,8 @@ p{
     }
   
     #startGame {
-      padding: 5px 40px;
+      padding: 15px 50px;
       font-size: 20px;
-      margin: 100px 2px;
+      margin: 265px 2px;
     }
   }
